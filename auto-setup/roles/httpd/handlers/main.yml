@@ -1,0 +1,13 @@
+---
+
+- name: Start httpd
+  service:
+    name: httpd
+    state: started
+  become: true
+
+- name: Reload httpd
+  service:
+    name: httpd
+    state: reloaded
+  become: true

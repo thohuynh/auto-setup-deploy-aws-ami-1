@@ -1,0 +1,10 @@
+---
+
+- hosts: aws
+  remote_user: ec2-user
+  roles:
+    - {
+      role: httpd,
+      domain: { host-domain },
+      project_name: project-name
+    }

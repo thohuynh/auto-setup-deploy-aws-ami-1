@@ -1,0 +1,26 @@
+---
+
+- name: Copy site configs
+  template:
+    src: "{{ item }}"
+    dest: "/etc/httpd/conf.d/{{ item | basename | regex_replace('\\.j2','.conf') }}"
+    owner: root
+    group: root
+  with_fileglob:
+    - "templates/*.j2"
+  become: true
+  notify:
+    - Reload httpd
+
+- name: Update etc/hosts.
+  lineinfile:
+    path: /etc/hosts
+    regexp: '.*{{ item }}$'
+    line: "127.0.0.1   {{domain}}"
+    state: present
+  when: hostvars[item].ansible_default_ipv4.address is defined
+  with_items:
+    - "{{ groups['aws'] }}"
+  become: true
+  notify:
+    - Reload httpd

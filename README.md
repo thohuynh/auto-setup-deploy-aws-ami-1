@@ -14,3 +14,6 @@ auto-setup-deploy-aws-ami-1
 - cd /var/www/html/{project-name}/shared/ -> create .env file
 - uncomment "append :linked_files, '.env'" in -> auto-deploy/deploy.rb
 - cap production deploy
+
+#setup-virtual-host
+- ansible-playbook setup-virtual-host.yml

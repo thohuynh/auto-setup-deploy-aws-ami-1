@@ -3892,3 +3892,1407 @@ npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@
   INFO [f1e5bfb2] Running /usr/bin/env echo "Branch master (at 4049d271a59140138aa240e4dda9b9494b36894d) deployed as release 20191101032715 by thor" >> /var/www/html/project-name/revisions.log on aws-test-ansible
  DEBUG [f1e5bfb2] Command: cd /var/www/html/project-name/releases && /usr/bin/env echo "Branch master (at 4049d271a59140138aa240e4dda9b9494b36894d) deployed as release 20191101032715 by thor" >> /var/www/html/project-name/revisions.log
   INFO [f1e5bfb2] Finished in 0.336 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-01 14:23:45 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [5fb0ea81] Running /usr/bin/env mkdir -p /tmp on aws-test-ansible
+ DEBUG [5fb0ea81] Command: /usr/bin/env mkdir -p /tmp
+  INFO [5fb0ea81] Finished in 1.745 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-project-name-production-thor.sh 0.0%
+  INFO Uploading /tmp/git-ssh-project-name-production-thor.sh 100.0%
+  INFO [1c7e8c49] Running sudo chmod 700 /tmp/git-ssh-project-name-production-thor.sh on aws-test-ansible
+ DEBUG [1c7e8c49] Command: sudo chmod 700 /tmp/git-ssh-project-name-production-thor.sh
+  INFO [1c7e8c49] Finished in 0.342 seconds with exit status 0 (successful).
+  INFO [dd31decb] Running /usr/bin/env git ls-remote git@github.com:thohuynh/test-s3-aws.git HEAD on aws-test-ansible
+ DEBUG [dd31decb] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-project-name-production-thor.sh" ; /usr/bin/env git ls-remote git@github.com:thohuynh/test-s3-aws.git HEAD )
+ DEBUG [dd31decb] 	Warning: Permanently added 'github.com,13.114.40.48' (RSA) to the list of known hosts.
+ DEBUG [dd31decb] 	4049d271a59140138aa240e4dda9b9494b36894d	HEAD
+  INFO [dd31decb] Finished in 2.344 seconds with exit status 0 (successful).
+  INFO [a438b4d1] Running /usr/bin/env mkdir -p /var/www/html/project-name/shared /var/www/html/project-name/releases on aws-test-ansible
+ DEBUG [a438b4d1] Command: /usr/bin/env mkdir -p /var/www/html/project-name/shared /var/www/html/project-name/releases
+  INFO [a438b4d1] Finished in 0.294 seconds with exit status 0 (successful).
+  INFO [add8e047] Running /usr/bin/env mkdir -p /var/www/html/project-name/shared/storage/app /var/www/html/project-name/shared/storage/framework/cache /var/www/html/project-name/shared/storage/framework/sessions /var/www/html/project-name/shared/storage/framework/views /var/www/html/project-name/shared/storage/framework/testing /var/www/html/project-name/shared/storage/logs on aws-test-ansible
+ DEBUG [add8e047] Command: /usr/bin/env mkdir -p /var/www/html/project-name/shared/storage/app /var/www/html/project-name/shared/storage/framework/cache /var/www/html/project-name/shared/storage/framework/sessions /var/www/html/project-name/shared/storage/framework/views /var/www/html/project-name/shared/storage/framework/testing /var/www/html/project-name/shared/storage/logs
+  INFO [add8e047] Finished in 0.330 seconds with exit status 0 (successful).
+  INFO [bc426007] Running /usr/bin/env mkdir -p /var/www/html/project-name/shared on aws-test-ansible
+ DEBUG [bc426007] Command: /usr/bin/env mkdir -p /var/www/html/project-name/shared
+  INFO [bc426007] Finished in 0.334 seconds with exit status 0 (successful).
+ DEBUG [33b45c2c] Running [ -f /var/www/html/project-name/shared/.env ] on aws-test-ansible
+ DEBUG [33b45c2c] Command: [ -f /var/www/html/project-name/shared/.env ]
+ DEBUG [33b45c2c] Finished in 0.333 seconds with exit status 1 (failed).
+ ERROR linked file /var/www/html/project-name/shared/.env does not exist on aws-test-ansible
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-11-01 14:24:20 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [0dad323c] Running /usr/bin/env mkdir -p /tmp on aws-test-ansible
+ DEBUG [0dad323c] Command: /usr/bin/env mkdir -p /tmp
+  INFO [0dad323c] Finished in 1.282 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-project-name-production-thor.sh 0.0%
+  INFO Uploading /tmp/git-ssh-project-name-production-thor.sh 100.0%
+  INFO [ed495693] Running sudo chmod 700 /tmp/git-ssh-project-name-production-thor.sh on aws-test-ansible
+ DEBUG [ed495693] Command: sudo chmod 700 /tmp/git-ssh-project-name-production-thor.sh
+  INFO [ed495693] Finished in 0.350 seconds with exit status 0 (successful).
+  INFO [60c2bf74] Running /usr/bin/env git ls-remote git@github.com:thohuynh/test-s3-aws.git HEAD on aws-test-ansible
+ DEBUG [60c2bf74] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-project-name-production-thor.sh" ; /usr/bin/env git ls-remote git@github.com:thohuynh/test-s3-aws.git HEAD )
+ DEBUG [60c2bf74] 	Warning: Permanently added the RSA host key for IP address '52.69.186.44' to the list of known hosts.
+ DEBUG [60c2bf74] 	4049d271a59140138aa240e4dda9b9494b36894d	HEAD
+  INFO [60c2bf74] Finished in 2.333 seconds with exit status 0 (successful).
+  INFO [d7bbf737] Running /usr/bin/env mkdir -p /var/www/html/project-name/shared /var/www/html/project-name/releases on aws-test-ansible
+ DEBUG [d7bbf737] Command: /usr/bin/env mkdir -p /var/www/html/project-name/shared /var/www/html/project-name/releases
+  INFO [d7bbf737] Finished in 0.288 seconds with exit status 0 (successful).
+  INFO [7f4b2a87] Running /usr/bin/env mkdir -p /var/www/html/project-name/shared/storage/app /var/www/html/project-name/shared/storage/framework/cache /var/www/html/project-name/shared/storage/framework/sessions /var/www/html/project-name/shared/storage/framework/views /var/www/html/project-name/shared/storage/framework/testing /var/www/html/project-name/shared/storage/logs on aws-test-ansible
+ DEBUG [7f4b2a87] Command: /usr/bin/env mkdir -p /var/www/html/project-name/shared/storage/app /var/www/html/project-name/shared/storage/framework/cache /var/www/html/project-name/shared/storage/framework/sessions /var/www/html/project-name/shared/storage/framework/views /var/www/html/project-name/shared/storage/framework/testing /var/www/html/project-name/shared/storage/logs
+  INFO [7f4b2a87] Finished in 0.336 seconds with exit status 0 (successful).
+  INFO [99058338] Running /usr/bin/env mkdir -p /var/www/html/project-name/shared on aws-test-ansible
+ DEBUG [99058338] Command: /usr/bin/env mkdir -p /var/www/html/project-name/shared
+  INFO [99058338] Finished in 0.335 seconds with exit status 0 (successful).
+ DEBUG [9f312e9b] Running [ -f /var/www/html/project-name/shared/.env ] on aws-test-ansible
+ DEBUG [9f312e9b] Command: [ -f /var/www/html/project-name/shared/.env ]
+ DEBUG [9f312e9b] Finished in 0.332 seconds with exit status 0 (successful).
+ DEBUG [e7558954] Running [ -f /var/www/html/project-name/current/REVISION ] on aws-test-ansible
+ DEBUG [e7558954] Command: [ -f /var/www/html/project-name/current/REVISION ]
+ DEBUG [e7558954] Finished in 0.331 seconds with exit status 1 (failed).
+ DEBUG [2889f7d3] Running [ -f /var/www/html/project-name/repo/HEAD ] on aws-test-ansible
+ DEBUG [2889f7d3] Command: [ -f /var/www/html/project-name/repo/HEAD ]
+ DEBUG [2889f7d3] Finished in 0.330 seconds with exit status 1 (failed).
+ DEBUG [47eede94] Running if test ! -d /var/www/html/project-name; then echo "Directory does not exist '/var/www/html/project-name'" 1>&2; false; fi on aws-test-ansible
+ DEBUG [47eede94] Command: if test ! -d /var/www/html/project-name; then echo "Directory does not exist '/var/www/html/project-name'" 1>&2; false; fi
+ DEBUG [47eede94] Finished in 0.333 seconds with exit status 0 (successful).
+  INFO [510c2c83] Running /usr/bin/env git clone --mirror git@github.com:thohuynh/test-s3-aws.git /var/www/html/project-name/repo on aws-test-ansible
+ DEBUG [510c2c83] Command: cd /var/www/html/project-name && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-project-name-production-thor.sh" ; /usr/bin/env git clone --mirror git@github.com:thohuynh/test-s3-aws.git /var/www/html/project-name/repo )
+ DEBUG [510c2c83] 	Cloning into bare repository '/var/www/html/project-name/repo'...
+ DEBUG [510c2c83] 	remote: Enumerating objects: 171, done.[K
+ DEBUG [510c2c83] 	remote: Counting objects:   0% (1/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:   1% (2/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:   2% (4/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:   3% (6/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:   4% (7/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:   5% (9/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:   6% (11/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:   7% (12/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:   8% (14/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:   9% (16/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  10% (18/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  11% (19/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  12% (21/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  13% (23/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  14% (24/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  15% (26/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  16% (28/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  17% (30/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  18% (31/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  19% (33/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  20% (35/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  21% (36/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  22% (38/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  23% (40/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  24% (42/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  25% (43/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  26% (45/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  27% (47/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  28% (48/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  29% (50/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  30% (52/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  31% (54/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  32% (55/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  33% (57/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  34% (59/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  35% (60/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  36% (62/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  37% (64/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  38% (65/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  39% (67/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  40% (69/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  41% (71/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  42% (72/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  43% (74/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  44% (76/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  45% (77/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  46% (79/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  47% (81/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  48% (83/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  49% (84/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  50% (86/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  51% (88/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  52% (89/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  53% (91/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  54% (93/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  55% (95/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  56% (96/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  57% (98/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  58% (100/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  59% (101/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  60% (103/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  61% (105/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  62% (107/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  63% (108/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  64% (110/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  65% (112/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  66% (113/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  67% (115/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  68% (117/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  69% (118/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  70% (120/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  71% (122/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  72% (124/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  73% (125/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  74% (127/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  75% (129/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  76% (130/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  77% (132/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  78% (134/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  79% (136/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  80% (137/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  81% (139/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  82% (141/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  83% (142/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  84% (144/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  85% (146/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  86% (148/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  87% (149/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  88% (151/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  89% (153/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  90% (154/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  91% (156/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  92% (158/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  93% (160/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  94% (161/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  95% (163/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  96% (165/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  97% (166/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  98% (168/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects:  99% (170/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects: 100% (171/171)[K
+ DEBUG [510c2c83] 	remote: Counting objects: 100% (171/171), done.[K
+ DEBUG [510c2c83] 	remote: Compressing objects:   0% (1/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:   1% (2/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:   2% (3/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:   3% (4/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:   4% (5/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:   5% (6/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:   6% (8/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:   7% (9/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:   8% (10/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:   9% (11/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  10% (12/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  11% (13/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  12% (15/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  13% (16/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  14% (17/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  15% (18/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  16% (19/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  17% (21/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  18% (22/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  19% (23/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  20% (24/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  21% (25/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  22% (26/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  23% (28/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  24% (29/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  25% (30/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  26% (31/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  27% (32/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  28% (34/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  29% (35/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  30% (36/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  31% (37/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  32% (38/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  33% (39/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  34% (41/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  35% (42/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  36% (43/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  37% (44/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  38% (45/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  39% (47/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  40% (48/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  41% (49/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  42% (50/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  43% (51/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  44% (52/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  45% (54/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  46% (55/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  47% (56/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  48% (57/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  49% (58/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  50% (59/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  51% (61/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  52% (62/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  53% (63/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  54% (64/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  55% (65/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  56% (67/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  57% (68/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  58% (69/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  59% (70/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  60% (71/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  61% (72/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  62% (74/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  63% (75/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  64% (76/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  65% (77/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  66% (78/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  67% (80/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  68% (81/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  69% (82/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  70% (83/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  71% (84/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  72% (85/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  73% (87/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  74% (88/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  75% (89/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  76% (90/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  77% (91/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  78% (93/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  79% (94/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  80% (95/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  81% (96/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  82% (97/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  83% (98/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  84% (100/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  85% (101/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  86% (102/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  87% (103/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  88% (104/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  89% (106/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  90% (107/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  91% (108/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  92% (109/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  93% (110/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  94% (111/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  95% (113/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  96% (114/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  97% (115/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  98% (116/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects:  99% (117/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects: 100% (118/118)[K
+ DEBUG [510c2c83] 	remote: Compressing objects: 100% (118/118), done.[K
+ DEBUG [510c2c83] 	Receiving objects:   0% (1/171)   
+ DEBUG [510c2c83] 	Receiving objects:   1% (2/171)   
+ DEBUG [510c2c83] 	Receiving objects:   2% (4/171)   
+ DEBUG [510c2c83] 	Receiving objects:   3% (6/171)   
+ DEBUG [510c2c83] 	Receiving objects:   4% (7/171)   
+ DEBUG [510c2c83] 	Receiving objects:   5% (9/171)   
+ DEBUG [510c2c83] 	Receiving objects:   6% (11/171)   
+ DEBUG [510c2c83] 	Receiving objects:   7% (12/171)   
+ DEBUG [510c2c83] 	Receiving objects:   8% (14/171)   
+ DEBUG [510c2c83] 	Receiving objects:   9% (16/171)   
+ DEBUG [510c2c83] 	Receiving objects:  10% (18/171)   
+ DEBUG [510c2c83] 	Receiving objects:  11% (19/171)   
+ DEBUG [510c2c83] 	Receiving objects:  12% (21/171)   
+ DEBUG [510c2c83] 	Receiving objects:  13% (23/171)   
+ DEBUG [510c2c83] 	Receiving objects:  14% (24/171)   
+ DEBUG [510c2c83] 	Receiving objects:  15% (26/171)   
+ DEBUG [510c2c83] 	Receiving objects:  16% (28/171)   
+ DEBUG [510c2c83] 	Receiving objects:  17% (30/171)   
+ DEBUG [510c2c83] 	Receiving objects:  18% (31/171)   
+ DEBUG [510c2c83] 	Receiving objects:  19% (33/171)   
+ DEBUG [510c2c83] 	Receiving objects:  20% (35/171)   
+ DEBUG [510c2c83] 	Receiving objects:  21% (36/171)   
+ DEBUG [510c2c83] 	Receiving objects:  22% (38/171)   
+ DEBUG [510c2c83] 	Receiving objects:  23% (40/171)   
+ DEBUG [510c2c83] 	Receiving objects:  24% (42/171)   
+ DEBUG [510c2c83] 	Receiving objects:  25% (43/171)   
+ DEBUG [510c2c83] 	Receiving objects:  26% (45/171)   
+ DEBUG [510c2c83] 	Receiving objects:  27% (47/171)   
+ DEBUG [510c2c83] 	Receiving objects:  28% (48/171)   
+ DEBUG [510c2c83] 	Receiving objects:  29% (50/171)   
+ DEBUG [510c2c83] 	Receiving objects:  30% (52/171)   
+ DEBUG [510c2c83] 	Receiving objects:  31% (54/171)   
+ DEBUG [510c2c83] 	Receiving objects:  32% (55/171)   
+ DEBUG [510c2c83] 	Receiving objects:  33% (57/171)   
+ DEBUG [510c2c83] 	Receiving objects:  34% (59/171)   
+ DEBUG [510c2c83] 	Receiving objects:  35% (60/171)   
+ DEBUG [510c2c83] 	Receiving objects:  36% (62/171)   
+ DEBUG [510c2c83] 	Receiving objects:  37% (64/171)   
+ DEBUG [510c2c83] 	Receiving objects:  38% (65/171)   
+ DEBUG [510c2c83] 	Receiving objects:  39% (67/171)   
+ DEBUG [510c2c83] 	Receiving objects:  40% (69/171)   
+ DEBUG [510c2c83] 	Receiving objects:  41% (71/171)   
+ DEBUG [510c2c83] 	Receiving objects:  42% (72/171)   
+ DEBUG [510c2c83] 	Receiving objects:  43% (74/171)   
+ DEBUG [510c2c83] 	Receiving objects:  44% (76/171)   
+ DEBUG [510c2c83] 	Receiving objects:  45% (77/171)   
+ DEBUG [510c2c83] 	Receiving objects:  46% (79/171)   remote: Total 171 (delta 36), reused 158 (delta 27), pack-reused 0
+ DEBUG [510c2c83] 	Receiving objects:  47% (81/171)   
+ DEBUG [510c2c83] 	Receiving objects:  48% (83/171)   
+ DEBUG [510c2c83] 	Receiving objects:  49% (84/171)   
+ DEBUG [510c2c83] 	Receiving objects:  50% (86/171)   
+ DEBUG [510c2c83] 	Receiving objects:  51% (88/171)   
+ DEBUG [510c2c83] 	Receiving objects:  52% (89/171)   
+ DEBUG [510c2c83] 	Receiving objects:  53% (91/171)   
+ DEBUG [510c2c83] 	Receiving objects:  54% (93/171)   
+ DEBUG [510c2c83] 	Receiving objects:  55% (95/171)   
+ DEBUG [510c2c83] 	Receiving objects:  56% (96/171)   
+ DEBUG [510c2c83] 	Receiving objects:  57% (98/171)   
+ DEBUG [510c2c83] 	Receiving objects:  58% (100/171)   
+ DEBUG [510c2c83] 	Receiving objects:  59% (101/171)   
+ DEBUG [510c2c83] 	Receiving objects:  60% (103/171)   
+ DEBUG [510c2c83] 	Receiving objects:  61% (105/171)   
+ DEBUG [510c2c83] 	Receiving objects:  62% (107/171)   
+ DEBUG [510c2c83] 	Receiving objects:  63% (108/171)   
+ DEBUG [510c2c83] 	Receiving objects:  64% (110/171)   
+ DEBUG [510c2c83] 	Receiving objects:  65% (112/171)   
+ DEBUG [510c2c83] 	Receiving objects:  66% (113/171)   
+ DEBUG [510c2c83] 	Receiving objects:  67% (115/171)   
+ DEBUG [510c2c83] 	Receiving objects:  68% (117/171)   
+ DEBUG [510c2c83] 	Receiving objects:  69% (118/171)   
+ DEBUG [510c2c83] 	Receiving objects:  70% (120/171)   
+ DEBUG [510c2c83] 	Receiving objects:  71% (122/171)   
+ DEBUG [510c2c83] 	Receiving objects:  72% (124/171)   
+ DEBUG [510c2c83] 	Receiving objects:  73% (125/171)   
+ DEBUG [510c2c83] 	Receiving objects:  74% (127/171)   
+ DEBUG [510c2c83] 	Receiving objects:  75% (129/171)   
+ DEBUG [510c2c83] 	Receiving objects:  76% (130/171)   
+ DEBUG [510c2c83] 	Receiving objects:  77% (132/171)   
+ DEBUG [510c2c83] 	Receiving objects:  78% (134/171)   
+ DEBUG [510c2c83] 	Receiving objects:  79% (136/171)   
+ DEBUG [510c2c83] 	Receiving objects:  80% (137/171)   
+ DEBUG [510c2c83] 	Receiving objects:  81% (139/171)   
+ DEBUG [510c2c83] 	Receiving objects:  82% (141/171)   
+ DEBUG [510c2c83] 	Receiving objects:  83% (142/171)   
+ DEBUG [510c2c83] 	Receiving objects:  84% (144/171)   
+ DEBUG [510c2c83] 	Receiving objects:  85% (146/171)   
+ DEBUG [510c2c83] 	Receiving objects:  86% (148/171)   
+ DEBUG [510c2c83] 	Receiving objects:  87% (149/171)   
+ DEBUG [510c2c83] 	Receiving objects:  88% (151/171)   
+ DEBUG [510c2c83] 	Receiving objects:  89% (153/171)   
+ DEBUG [510c2c83] 	Receiving objects:  90% (154/171)   
+ DEBUG [510c2c83] 	Receiving objects:  91% (156/171)   
+ DEBUG [510c2c83] 	Receiving objects:  92% (158/171)   
+ DEBUG [510c2c83] 	Receiving objects:  93% (160/171)   
+ DEBUG [510c2c83] 	Receiving objects:  94% (161/171)   
+ DEBUG [510c2c83] 	Receiving objects:  95% (163/171)   
+ DEBUG [510c2c83] 	Receiving objects:  96% (165/171)   
+ DEBUG [510c2c83] 	Receiving objects:  97% (166/171)   
+ DEBUG [510c2c83] 	Receiving objects:  98% (168/171)   
+ DEBUG [510c2c83] 	Receiving objects:  99% (170/171)   
+ DEBUG [510c2c83] 	Receiving objects: 100% (171/171)   
+ DEBUG [510c2c83] 	Receiving objects: 100% (171/171), 70.25 KiB | 428.00 KiB/s, done.
+ DEBUG [510c2c83] 	Resolving deltas:   0% (0/36)   
+ DEBUG [510c2c83] 	Resolving deltas:  13% (5/36)   
+ DEBUG [510c2c83] 	Resolving deltas:  16% (6/36)   
+ DEBUG [510c2c83] 	Resolving deltas:  27% (10/36)   
+ DEBUG [510c2c83] 	Resolving deltas:  36% (13/36)   
+ DEBUG [510c2c83] 	Resolving deltas:  47% (17/36)   
+ DEBUG [510c2c83] 	Resolving deltas:  52% (19/36)   
+ DEBUG [510c2c83] 	Resolving deltas:  61% (22/36)   
+ DEBUG [510c2c83] 	Resolving deltas:  66% (24/36)   
+ DEBUG [510c2c83] 	Resolving deltas:  72% (26/36)   
+ DEBUG [510c2c83] 	Resolving deltas:  77% (28/36)   
+ DEBUG [510c2c83] 	Resolving deltas:  83% (30/36)   
+ DEBUG [510c2c83] 	Resolving deltas:  88% (32/36)   
+ DEBUG [510c2c83] 	Resolving deltas:  94% (34/36)   
+ DEBUG [510c2c83] 	Resolving deltas:  97% (35/36)   
+ DEBUG [510c2c83] 	Resolving deltas: 100% (36/36)   
+ DEBUG [510c2c83] 	Resolving deltas: 100% (36/36), done.
+  INFO [510c2c83] Finished in 2.776 seconds with exit status 0 (successful).
+ DEBUG [bfdda98d] Running if test ! -d /var/www/html/project-name/repo; then echo "Directory does not exist '/var/www/html/project-name/repo'" 1>&2; false; fi on aws-test-ansible
+ DEBUG [bfdda98d] Command: if test ! -d /var/www/html/project-name/repo; then echo "Directory does not exist '/var/www/html/project-name/repo'" 1>&2; false; fi
+ DEBUG [bfdda98d] Finished in 0.227 seconds with exit status 0 (successful).
+  INFO [aca72ee9] Running /usr/bin/env git remote set-url origin git@github.com:thohuynh/test-s3-aws.git on aws-test-ansible
+ DEBUG [aca72ee9] Command: cd /var/www/html/project-name/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-project-name-production-thor.sh" ; /usr/bin/env git remote set-url origin git@github.com:thohuynh/test-s3-aws.git )
+  INFO [aca72ee9] Finished in 0.334 seconds with exit status 0 (successful).
+  INFO [b06445b0] Running /usr/bin/env git remote update --prune on aws-test-ansible
+ DEBUG [b06445b0] Command: cd /var/www/html/project-name/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-project-name-production-thor.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [b06445b0] 	Fetching origin
+  INFO [b06445b0] Finished in 2.351 seconds with exit status 0 (successful).
+ DEBUG [86980c5c] Running if test ! -d /var/www/html/project-name/repo; then echo "Directory does not exist '/var/www/html/project-name/repo'" 1>&2; false; fi on aws-test-ansible
+ DEBUG [86980c5c] Command: if test ! -d /var/www/html/project-name/repo; then echo "Directory does not exist '/var/www/html/project-name/repo'" 1>&2; false; fi
+ DEBUG [86980c5c] Finished in 0.286 seconds with exit status 0 (successful).
+  INFO [eb0055fb] Running /usr/bin/env mkdir -p /var/www/html/project-name/releases/20191101072427 on aws-test-ansible
+ DEBUG [eb0055fb] Command: cd /var/www/html/project-name/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-project-name-production-thor.sh" ; /usr/bin/env mkdir -p /var/www/html/project-name/releases/20191101072427 )
+  INFO [eb0055fb] Finished in 0.333 seconds with exit status 0 (successful).
+  INFO [88260ecd] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/html/project-name/releases/20191101072427 on aws-test-ansible
+ DEBUG [88260ecd] Command: cd /var/www/html/project-name/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-project-name-production-thor.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/html/project-name/releases/20191101072427 )
+  INFO [88260ecd] Finished in 0.346 seconds with exit status 0 (successful).
+ DEBUG [9ebf789d] Running if test ! -d /var/www/html/project-name/repo; then echo "Directory does not exist '/var/www/html/project-name/repo'" 1>&2; false; fi on aws-test-ansible
+ DEBUG [9ebf789d] Command: if test ! -d /var/www/html/project-name/repo; then echo "Directory does not exist '/var/www/html/project-name/repo'" 1>&2; false; fi
+ DEBUG [9ebf789d] Finished in 0.645 seconds with exit status 0 (successful).
+ DEBUG [d20819b6] Running /usr/bin/env git rev-list --max-count=1 master on aws-test-ansible
+ DEBUG [d20819b6] Command: cd /var/www/html/project-name/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-project-name-production-thor.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [d20819b6] 	4049d271a59140138aa240e4dda9b9494b36894d
+ DEBUG [d20819b6] Finished in 0.757 seconds with exit status 0 (successful).
+ DEBUG [de40ff31] Running if test ! -d /var/www/html/project-name/releases/20191101072427; then echo "Directory does not exist '/var/www/html/project-name/releases/20191101072427'" 1>&2; false; fi on aws-test-ansible
+ DEBUG [de40ff31] Command: if test ! -d /var/www/html/project-name/releases/20191101072427; then echo "Directory does not exist '/var/www/html/project-name/releases/20191101072427'" 1>&2; false; fi
+ DEBUG [de40ff31] Finished in 0.335 seconds with exit status 0 (successful).
+  INFO [364e2364] Running /usr/bin/env echo "4049d271a59140138aa240e4dda9b9494b36894d" > REVISION on aws-test-ansible
+ DEBUG [364e2364] Command: cd /var/www/html/project-name/releases/20191101072427 && /usr/bin/env echo "4049d271a59140138aa240e4dda9b9494b36894d" > REVISION
+  INFO [364e2364] Finished in 0.336 seconds with exit status 0 (successful).
+  INFO [43bffe97] Running /usr/bin/env mkdir -p /var/www/html/project-name/releases/20191101072427 on aws-test-ansible
+ DEBUG [43bffe97] Command: /usr/bin/env mkdir -p /var/www/html/project-name/releases/20191101072427
+  INFO [43bffe97] Finished in 0.333 seconds with exit status 0 (successful).
+ DEBUG [427bcb21] Running [ -L /var/www/html/project-name/releases/20191101072427/.env ] on aws-test-ansible
+ DEBUG [427bcb21] Command: [ -L /var/www/html/project-name/releases/20191101072427/.env ]
+ DEBUG [427bcb21] Finished in 0.342 seconds with exit status 1 (failed).
+ DEBUG [100307fc] Running [ -f /var/www/html/project-name/releases/20191101072427/.env ] on aws-test-ansible
+ DEBUG [100307fc] Command: [ -f /var/www/html/project-name/releases/20191101072427/.env ]
+ DEBUG [100307fc] Finished in 0.343 seconds with exit status 1 (failed).
+  INFO [b209fe20] Running /usr/bin/env ln -s /var/www/html/project-name/shared/.env /var/www/html/project-name/releases/20191101072427/.env on aws-test-ansible
+ DEBUG [b209fe20] Command: /usr/bin/env ln -s /var/www/html/project-name/shared/.env /var/www/html/project-name/releases/20191101072427/.env
+  INFO [b209fe20] Finished in 0.332 seconds with exit status 0 (successful).
+  INFO [3fdf163b] Running /usr/bin/env mkdir -p /var/www/html/project-name/releases/20191101072427/storage /var/www/html/project-name/releases/20191101072427/storage/framework on aws-test-ansible
+ DEBUG [3fdf163b] Command: /usr/bin/env mkdir -p /var/www/html/project-name/releases/20191101072427/storage /var/www/html/project-name/releases/20191101072427/storage/framework
+  INFO [3fdf163b] Finished in 0.333 seconds with exit status 0 (successful).
+ DEBUG [2c89394f] Running [ -L /var/www/html/project-name/releases/20191101072427/storage/app ] on aws-test-ansible
+ DEBUG [2c89394f] Command: [ -L /var/www/html/project-name/releases/20191101072427/storage/app ]
+ DEBUG [2c89394f] Finished in 0.334 seconds with exit status 1 (failed).
+ DEBUG [ddfda4b8] Running [ -d /var/www/html/project-name/releases/20191101072427/storage/app ] on aws-test-ansible
+ DEBUG [ddfda4b8] Command: [ -d /var/www/html/project-name/releases/20191101072427/storage/app ]
+ DEBUG [ddfda4b8] Finished in 0.334 seconds with exit status 0 (successful).
+  INFO [2bd44179] Running /usr/bin/env rm -rf /var/www/html/project-name/releases/20191101072427/storage/app on aws-test-ansible
+ DEBUG [2bd44179] Command: /usr/bin/env rm -rf /var/www/html/project-name/releases/20191101072427/storage/app
+  INFO [2bd44179] Finished in 0.333 seconds with exit status 0 (successful).
+  INFO [60516054] Running /usr/bin/env ln -s /var/www/html/project-name/shared/storage/app /var/www/html/project-name/releases/20191101072427/storage/app on aws-test-ansible
+ DEBUG [60516054] Command: /usr/bin/env ln -s /var/www/html/project-name/shared/storage/app /var/www/html/project-name/releases/20191101072427/storage/app
+  INFO [60516054] Finished in 0.334 seconds with exit status 0 (successful).
+ DEBUG [101917ed] Running [ -L /var/www/html/project-name/releases/20191101072427/storage/framework/cache ] on aws-test-ansible
+ DEBUG [101917ed] Command: [ -L /var/www/html/project-name/releases/20191101072427/storage/framework/cache ]
+ DEBUG [101917ed] Finished in 0.334 seconds with exit status 1 (failed).
+ DEBUG [3b2c6b2e] Running [ -d /var/www/html/project-name/releases/20191101072427/storage/framework/cache ] on aws-test-ansible
+ DEBUG [3b2c6b2e] Command: [ -d /var/www/html/project-name/releases/20191101072427/storage/framework/cache ]
+ DEBUG [3b2c6b2e] Finished in 0.336 seconds with exit status 0 (successful).
+  INFO [2b1dc34c] Running /usr/bin/env rm -rf /var/www/html/project-name/releases/20191101072427/storage/framework/cache on aws-test-ansible
+ DEBUG [2b1dc34c] Command: /usr/bin/env rm -rf /var/www/html/project-name/releases/20191101072427/storage/framework/cache
+  INFO [2b1dc34c] Finished in 0.336 seconds with exit status 0 (successful).
+  INFO [8816e6a7] Running /usr/bin/env ln -s /var/www/html/project-name/shared/storage/framework/cache /var/www/html/project-name/releases/20191101072427/storage/framework/cache on aws-test-ansible
+ DEBUG [8816e6a7] Command: /usr/bin/env ln -s /var/www/html/project-name/shared/storage/framework/cache /var/www/html/project-name/releases/20191101072427/storage/framework/cache
+  INFO [8816e6a7] Finished in 0.340 seconds with exit status 0 (successful).
+ DEBUG [1fe8e4ae] Running [ -L /var/www/html/project-name/releases/20191101072427/storage/framework/sessions ] on aws-test-ansible
+ DEBUG [1fe8e4ae] Command: [ -L /var/www/html/project-name/releases/20191101072427/storage/framework/sessions ]
+ DEBUG [1fe8e4ae] Finished in 0.337 seconds with exit status 1 (failed).
+ DEBUG [2c72b516] Running [ -d /var/www/html/project-name/releases/20191101072427/storage/framework/sessions ] on aws-test-ansible
+ DEBUG [2c72b516] Command: [ -d /var/www/html/project-name/releases/20191101072427/storage/framework/sessions ]
+ DEBUG [2c72b516] Finished in 0.332 seconds with exit status 0 (successful).
+  INFO [1f3d1f7d] Running /usr/bin/env rm -rf /var/www/html/project-name/releases/20191101072427/storage/framework/sessions on aws-test-ansible
+ DEBUG [1f3d1f7d] Command: /usr/bin/env rm -rf /var/www/html/project-name/releases/20191101072427/storage/framework/sessions
+  INFO [1f3d1f7d] Finished in 0.336 seconds with exit status 0 (successful).
+  INFO [47b9dc54] Running /usr/bin/env ln -s /var/www/html/project-name/shared/storage/framework/sessions /var/www/html/project-name/releases/20191101072427/storage/framework/sessions on aws-test-ansible
+ DEBUG [47b9dc54] Command: /usr/bin/env ln -s /var/www/html/project-name/shared/storage/framework/sessions /var/www/html/project-name/releases/20191101072427/storage/framework/sessions
+  INFO [47b9dc54] Finished in 0.335 seconds with exit status 0 (successful).
+ DEBUG [5044a802] Running [ -L /var/www/html/project-name/releases/20191101072427/storage/framework/views ] on aws-test-ansible
+ DEBUG [5044a802] Command: [ -L /var/www/html/project-name/releases/20191101072427/storage/framework/views ]
+ DEBUG [5044a802] Finished in 0.334 seconds with exit status 1 (failed).
+ DEBUG [d9a7b36b] Running [ -d /var/www/html/project-name/releases/20191101072427/storage/framework/views ] on aws-test-ansible
+ DEBUG [d9a7b36b] Command: [ -d /var/www/html/project-name/releases/20191101072427/storage/framework/views ]
+ DEBUG [d9a7b36b] Finished in 0.335 seconds with exit status 0 (successful).
+  INFO [502a521a] Running /usr/bin/env rm -rf /var/www/html/project-name/releases/20191101072427/storage/framework/views on aws-test-ansible
+ DEBUG [502a521a] Command: /usr/bin/env rm -rf /var/www/html/project-name/releases/20191101072427/storage/framework/views
+  INFO [502a521a] Finished in 0.334 seconds with exit status 0 (successful).
+  INFO [88572e84] Running /usr/bin/env ln -s /var/www/html/project-name/shared/storage/framework/views /var/www/html/project-name/releases/20191101072427/storage/framework/views on aws-test-ansible
+ DEBUG [88572e84] Command: /usr/bin/env ln -s /var/www/html/project-name/shared/storage/framework/views /var/www/html/project-name/releases/20191101072427/storage/framework/views
+  INFO [88572e84] Finished in 0.333 seconds with exit status 0 (successful).
+ DEBUG [e2aa09a1] Running [ -L /var/www/html/project-name/releases/20191101072427/storage/framework/testing ] on aws-test-ansible
+ DEBUG [e2aa09a1] Command: [ -L /var/www/html/project-name/releases/20191101072427/storage/framework/testing ]
+ DEBUG [e2aa09a1] Finished in 0.334 seconds with exit status 1 (failed).
+ DEBUG [a574a9d4] Running [ -d /var/www/html/project-name/releases/20191101072427/storage/framework/testing ] on aws-test-ansible
+ DEBUG [a574a9d4] Command: [ -d /var/www/html/project-name/releases/20191101072427/storage/framework/testing ]
+ DEBUG [a574a9d4] Finished in 0.334 seconds with exit status 0 (successful).
+  INFO [bf5968c5] Running /usr/bin/env rm -rf /var/www/html/project-name/releases/20191101072427/storage/framework/testing on aws-test-ansible
+ DEBUG [bf5968c5] Command: /usr/bin/env rm -rf /var/www/html/project-name/releases/20191101072427/storage/framework/testing
+  INFO [bf5968c5] Finished in 0.333 seconds with exit status 0 (successful).
+  INFO [1ee681e4] Running /usr/bin/env ln -s /var/www/html/project-name/shared/storage/framework/testing /var/www/html/project-name/releases/20191101072427/storage/framework/testing on aws-test-ansible
+ DEBUG [1ee681e4] Command: /usr/bin/env ln -s /var/www/html/project-name/shared/storage/framework/testing /var/www/html/project-name/releases/20191101072427/storage/framework/testing
+  INFO [1ee681e4] Finished in 0.334 seconds with exit status 0 (successful).
+ DEBUG [8b1eb72f] Running [ -L /var/www/html/project-name/releases/20191101072427/storage/logs ] on aws-test-ansible
+ DEBUG [8b1eb72f] Command: [ -L /var/www/html/project-name/releases/20191101072427/storage/logs ]
+ DEBUG [8b1eb72f] Finished in 0.634 seconds with exit status 1 (failed).
+ DEBUG [a0b9134e] Running [ -d /var/www/html/project-name/releases/20191101072427/storage/logs ] on aws-test-ansible
+ DEBUG [a0b9134e] Command: [ -d /var/www/html/project-name/releases/20191101072427/storage/logs ]
+ DEBUG [a0b9134e] Finished in 0.333 seconds with exit status 0 (successful).
+  INFO [fcf3e3eb] Running /usr/bin/env rm -rf /var/www/html/project-name/releases/20191101072427/storage/logs on aws-test-ansible
+ DEBUG [fcf3e3eb] Command: /usr/bin/env rm -rf /var/www/html/project-name/releases/20191101072427/storage/logs
+  INFO [fcf3e3eb] Finished in 0.332 seconds with exit status 0 (successful).
+  INFO [c7eba051] Running /usr/bin/env ln -s /var/www/html/project-name/shared/storage/logs /var/www/html/project-name/releases/20191101072427/storage/logs on aws-test-ansible
+ DEBUG [c7eba051] Command: /usr/bin/env ln -s /var/www/html/project-name/shared/storage/logs /var/www/html/project-name/releases/20191101072427/storage/logs
+  INFO [c7eba051] Finished in 0.335 seconds with exit status 0 (successful).
+  INFO [5e2fcbf7] Running /usr/bin/env ln -s /var/www/html/project-name/releases/20191101072427 /var/www/html/project-name/releases/current on aws-test-ansible
+ DEBUG [5e2fcbf7] Command: /usr/bin/env ln -s /var/www/html/project-name/releases/20191101072427 /var/www/html/project-name/releases/current
+  INFO [5e2fcbf7] Finished in 0.333 seconds with exit status 0 (successful).
+  INFO [25058cd2] Running /usr/bin/env mv /var/www/html/project-name/releases/current /var/www/html/project-name on aws-test-ansible
+ DEBUG [25058cd2] Command: /usr/bin/env mv /var/www/html/project-name/releases/current /var/www/html/project-name
+  INFO [25058cd2] Finished in 0.336 seconds with exit status 0 (successful).
+ DEBUG [f806b25d] Running /usr/bin/env ls -x /var/www/html/project-name/releases on aws-test-ansible
+ DEBUG [f806b25d] Command: /usr/bin/env ls -x /var/www/html/project-name/releases
+ DEBUG [f806b25d] 	20191101072427
+ DEBUG [f806b25d] Finished in 0.337 seconds with exit status 0 (successful).
+  INFO [3bf63ddd] Running vendorDir=/var/www/html/project-name/current/vendor; if [ -d $vendorDir ] || [ -h $vendorDir ]; then cp -a $vendorDir /var/www/html/project-name/releases/20191101072427/vendor; fi; on aws-test-ansible
+ DEBUG [3bf63ddd] Command: vendorDir=/var/www/html/project-name/current/vendor; if [ -d $vendorDir ] || [ -h $vendorDir ]; then cp -a $vendorDir /var/www/html/project-name/releases/20191101072427/vendor; fi;
+  INFO [3bf63ddd] Finished in 0.335 seconds with exit status 0 (successful).
+ DEBUG [b4788d1f] Running if test ! -d /var/www/html/project-name/releases/20191101072427; then echo "Directory does not exist '/var/www/html/project-name/releases/20191101072427'" 1>&2; false; fi on aws-test-ansible
+ DEBUG [b4788d1f] Command: if test ! -d /var/www/html/project-name/releases/20191101072427; then echo "Directory does not exist '/var/www/html/project-name/releases/20191101072427'" 1>&2; false; fi
+ DEBUG [b4788d1f] Finished in 0.334 seconds with exit status 0 (successful).
+  INFO [30dc736c] Running /usr/bin/env composer install --no-dev --quiet --prefer-dist --optimize-autoloader on aws-test-ansible
+ DEBUG [30dc736c] Command: cd /var/www/html/project-name/releases/20191101072427 && /usr/bin/env composer install --no-dev --quiet --prefer-dist --optimize-autoloader
+  INFO [30dc736c] Finished in 29.097 seconds with exit status 0 (successful).
+ DEBUG [88294759] Running if test ! -d /var/www/html/project-name/releases/20191101072427; then echo "Directory does not exist '/var/www/html/project-name/releases/20191101072427'" 1>&2; false; fi on aws-test-ansible
+ DEBUG [88294759] Command: if test ! -d /var/www/html/project-name/releases/20191101072427; then echo "Directory does not exist '/var/www/html/project-name/releases/20191101072427'" 1>&2; false; fi
+ DEBUG [88294759] Finished in 0.333 seconds with exit status 0 (successful).
+  INFO [8ee08739] Running sudo chmod -R a+rwx storage on aws-test-ansible
+ DEBUG [8ee08739] Command: cd /var/www/html/project-name/releases/20191101072427 && sudo chmod -R a+rwx storage
+  INFO [8ee08739] Finished in 0.341 seconds with exit status 0 (successful).
+  INFO [36de3dc2] Running sudo chmod -R a+rwx storage/logs on aws-test-ansible
+ DEBUG [36de3dc2] Command: cd /var/www/html/project-name/releases/20191101072427 && sudo chmod -R a+rwx storage/logs
+  INFO [36de3dc2] Finished in 0.340 seconds with exit status 0 (successful).
+  INFO [0c318554] Running sudo chmod -R a+rwx bootstrap on aws-test-ansible
+ DEBUG [0c318554] Command: cd /var/www/html/project-name/releases/20191101072427 && sudo chmod -R a+rwx bootstrap
+  INFO [0c318554] Finished in 0.340 seconds with exit status 0 (successful).
+  INFO [f0057063] Running sudo chmod -R ug+rwx bootstrap/cache on aws-test-ansible
+ DEBUG [f0057063] Command: cd /var/www/html/project-name/releases/20191101072427 && sudo chmod -R ug+rwx bootstrap/cache
+  INFO [f0057063] Finished in 0.339 seconds with exit status 0 (successful).
+  INFO [ee3477aa] Running sudo chown -RH ec2-user:apache storage on aws-test-ansible
+ DEBUG [ee3477aa] Command: cd /var/www/html/project-name/releases/20191101072427 && sudo chown -RH ec2-user:apache storage
+  INFO [ee3477aa] Finished in 0.341 seconds with exit status 0 (successful).
+  INFO [4694ddcc] Running sudo chown -RH ec2-user:apache storage/logs on aws-test-ansible
+ DEBUG [4694ddcc] Command: cd /var/www/html/project-name/releases/20191101072427 && sudo chown -RH ec2-user:apache storage/logs
+  INFO [4694ddcc] Finished in 0.342 seconds with exit status 0 (successful).
+  INFO [43230dc6] Running sudo chown -RH ec2-user:apache bootstrap on aws-test-ansible
+ DEBUG [43230dc6] Command: cd /var/www/html/project-name/releases/20191101072427 && sudo chown -RH ec2-user:apache bootstrap
+  INFO [43230dc6] Finished in 0.340 seconds with exit status 0 (successful).
+  INFO [929824df] Running sudo chown -RH ec2-user:apache bootstrap/cache on aws-test-ansible
+ DEBUG [929824df] Command: cd /var/www/html/project-name/releases/20191101072427 && sudo chown -RH ec2-user:apache bootstrap/cache
+  INFO [929824df] Finished in 0.342 seconds with exit status 0 (successful).
+ DEBUG [af34e2dc] Running if test ! -d /var/www/html/project-name/releases/20191101072427; then echo "Directory does not exist '/var/www/html/project-name/releases/20191101072427'" 1>&2; false; fi on aws-test-ansible
+ DEBUG [af34e2dc] Command: if test ! -d /var/www/html/project-name/releases/20191101072427; then echo "Directory does not exist '/var/www/html/project-name/releases/20191101072427'" 1>&2; false; fi
+ DEBUG [af34e2dc] Finished in 0.332 seconds with exit status 0 (successful).
+  INFO [24467858] Running /usr/bin/env php artisan view:clear on aws-test-ansible
+ DEBUG [24467858] Command: cd /var/www/html/project-name/releases/20191101072427 && /usr/bin/env php artisan view:clear
+ DEBUG [24467858] 	[32mCompiled views cleared![39m
+  INFO [24467858] Finished in 0.462 seconds with exit status 0 (successful).
+  INFO [c67a35a1] Running /usr/bin/env php artisan config:clear on aws-test-ansible
+ DEBUG [c67a35a1] Command: cd /var/www/html/project-name/releases/20191101072427 && /usr/bin/env php artisan config:clear
+ DEBUG [c67a35a1] 	[32mConfiguration cache cleared![39m
+  INFO [c67a35a1] Finished in 0.541 seconds with exit status 0 (successful).
+  INFO [b299edb9] Running /usr/bin/env php artisan cache:clear on aws-test-ansible
+ DEBUG [b299edb9] Command: cd /var/www/html/project-name/releases/20191101072427 && /usr/bin/env php artisan cache:clear
+ DEBUG [b299edb9] 	[37;41mFailed to clear cache. Make sure you have the appropriate permissions.[39;49m
+  INFO [b299edb9] Finished in 0.415 seconds with exit status 0 (successful).
+  INFO [1aaa82ad] Running /usr/bin/env php artisan config:cache on aws-test-ansible
+ DEBUG [1aaa82ad] Command: cd /var/www/html/project-name/releases/20191101072427 && /usr/bin/env php artisan config:cache
+ DEBUG [1aaa82ad] 	[32mConfiguration cache cleared![39m
+ DEBUG [1aaa82ad] 	[32mConfiguration cached successfully![39m
+  INFO [1aaa82ad] Finished in 0.467 seconds with exit status 0 (successful).
+ DEBUG [bb73d2a8] Running if test ! -d /var/www/html/project-name/releases/20191101072427; then echo "Directory does not exist '/var/www/html/project-name/releases/20191101072427'" 1>&2; false; fi on aws-test-ansible
+ DEBUG [bb73d2a8] Command: if test ! -d /var/www/html/project-name/releases/20191101072427; then echo "Directory does not exist '/var/www/html/project-name/releases/20191101072427'" 1>&2; false; fi
+ DEBUG [bb73d2a8] Finished in 0.336 seconds with exit status 0 (successful).
+  INFO [28289050] Running /usr/bin/env yarn install on aws-test-ansible
+ DEBUG [28289050] Command: cd /var/www/html/project-name/releases/20191101072427 && /usr/bin/env yarn install
+ DEBUG [28289050] 	[2K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[1myarn install v1.19.1[22m
+ DEBUG [28289050] 	[2K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[34minfo[39m No lockfile found.
+ DEBUG [28289050] 	[2K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[2m[1/4][22m Resolving packages...
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠁ 
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠂ axios@^0.19
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠄ is-buffer@^2.0.2
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⡀ ms@2.0.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⢀ cross-spawn@^6.0.5
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠠ which@^1.2.9
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠐ laravel-mix@^4.0.7
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠈ yargs@^12.0.5
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠁ regenerator-runtime@^0.13.2
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠂ schema-utils@^1.0.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠄ source-map-support@~0.5.10
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⡀ strip-ansi@^3.0.1
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⢀ @babel/helper-plugin-utils@^7.0.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠠ @babel/helper-plugin-utils@^7.0.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠐ @babel/helper-plugin-utils@^7.0.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠈ json5@^1.0.1
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠁ lodash@^4.17.13
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠂ supports-color@^5.4.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠄ source-map@~0.6.1
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⡀ strip-ansi@^5.1.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⢀ brace-expansion@^1.1.7
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠠ pinkie-promise@^2.0.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠐ async-limiter@~1.0.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠈ mamacro@^0.0.3
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠁ readable-stream@^2.0.1
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠂ @babel/types@^7.0.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠄ js-tokens@^3.0.0 || ^4.0.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⡀ use@^3.1.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⢀ tar@^4
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠠ parse-json@^4.0.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠐ glob@^7.1.3
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠈ regexp.prototype.flags@^1.2.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠁ ee-first@1.1.1
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠂ thunky@^1.0.2
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠄ strip-eof@^1.0.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⡀ @webassemblyjs/wasm-parser@1.8.5
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⢀ randomfill@^1.0.3
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠠ to-regex@^3.0.1
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠐ repeat-string@^1.6.1
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠈ bluebird@^3.1.1
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠁ resolve-from@^3.0.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠂ postcss-value-parser@^3.0.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠄ resolve-from@^3.0.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⡀ readable-stream@^2.3.6
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⢀ homedir-polyfill@^1.0.1
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠠ unpipe@1.0.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠐ p-defer@^1.0.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠈ elliptic@^6.0.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠁ safe-buffer@^5.1.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠂ unset-value@^1.0.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠄ yallist@^3.0.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⡀ is-obj@^1.0.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⢀ html-comment-regex@^1.1.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠠ randombytes@^2.0.1
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠐ object-visit@^1.0.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠈ simple-swizzle@^0.2.2
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠁ nth-check@^1.0.2
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠂ minimalistic-assert@^1.0.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠄ string.prototype.trimright@^2.1.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⡀ has-symbols@^1.0.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⢀ urix@^0.1.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠠ lodash.keys@^3.0.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠐ lodash.isarray@^3.0.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠈ lodash.isarray@^3.0.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠁ is-number@^7.0.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	⠂ semver@^6.3.0
+ DEBUG [28289050] 	[0K
+ DEBUG [28289050] 	[2K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[2K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[2m[2/4][22m Fetching packages...
+ DEBUG [28289050] 	[2K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[-----------------------------------------------------------------------] 0/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[-----------------------------------------------------------------------] 5/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#----------------------------------------------------------------------] 9/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#---------------------------------------------------------------------] 14/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#---------------------------------------------------------------------] 16/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##--------------------------------------------------------------------] 20/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##--------------------------------------------------------------------] 23/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##--------------------------------------------------------------------] 25/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##--------------------------------------------------------------------] 28/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##--------------------------------------------------------------------] 31/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###-------------------------------------------------------------------] 33/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###-------------------------------------------------------------------] 36/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###-------------------------------------------------------------------] 38/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###-------------------------------------------------------------------] 40/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###-------------------------------------------------------------------] 41/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###-------------------------------------------------------------------] 43/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###-------------------------------------------------------------------] 44/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###-------------------------------------------------------------------] 45/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[####------------------------------------------------------------------] 48/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[####------------------------------------------------------------------] 51/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[####------------------------------------------------------------------] 54/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[####------------------------------------------------------------------] 58/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[####------------------------------------------------------------------] 59/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#####-----------------------------------------------------------------] 63/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#####-----------------------------------------------------------------] 68/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#####-----------------------------------------------------------------] 69/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[######----------------------------------------------------------------] 75/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[######----------------------------------------------------------------] 79/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[######----------------------------------------------------------------] 84/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#######---------------------------------------------------------------] 90/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#######---------------------------------------------------------------] 96/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#######--------------------------------------------------------------] 100/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[########-------------------------------------------------------------] 102/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[########-------------------------------------------------------------] 103/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[########-------------------------------------------------------------] 106/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[########-------------------------------------------------------------] 109/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[########-------------------------------------------------------------] 112/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#########------------------------------------------------------------] 115/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#########------------------------------------------------------------] 116/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#########------------------------------------------------------------] 118/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#########------------------------------------------------------------] 123/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##########-----------------------------------------------------------] 128/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##########-----------------------------------------------------------] 132/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##########-----------------------------------------------------------] 135/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##########-----------------------------------------------------------] 138/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##########-----------------------------------------------------------] 140/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###########----------------------------------------------------------] 142/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###########----------------------------------------------------------] 145/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###########----------------------------------------------------------] 147/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###########----------------------------------------------------------] 149/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###########----------------------------------------------------------] 150/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###########----------------------------------------------------------] 152/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[############---------------------------------------------------------] 155/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[############---------------------------------------------------------] 159/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[############---------------------------------------------------------] 163/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[############---------------------------------------------------------] 166/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#############--------------------------------------------------------] 169/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#############--------------------------------------------------------] 173/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#############--------------------------------------------------------] 176/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#############--------------------------------------------------------] 180/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##############-------------------------------------------------------] 184/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##############-------------------------------------------------------] 188/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##############-------------------------------------------------------] 191/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###############------------------------------------------------------] 195/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###############------------------------------------------------------] 198/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###############------------------------------------------------------] 201/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###############------------------------------------------------------] 204/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[################-----------------------------------------------------] 208/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[################-----------------------------------------------------] 213/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[################-----------------------------------------------------] 218/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[################-----------------------------------------------------] 220/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#################----------------------------------------------------] 222/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#################----------------------------------------------------] 225/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#################----------------------------------------------------] 227/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#################----------------------------------------------------] 230/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##################---------------------------------------------------] 234/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##################---------------------------------------------------] 240/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##################---------------------------------------------------] 246/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###################--------------------------------------------------] 248/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###################--------------------------------------------------] 250/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###################--------------------------------------------------] 252/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###################--------------------------------------------------] 256/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###################--------------------------------------------------] 260/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[####################-------------------------------------------------] 262/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[####################-------------------------------------------------] 266/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[####################-------------------------------------------------] 270/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#####################------------------------------------------------] 274/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#####################------------------------------------------------] 278/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#####################------------------------------------------------] 282/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[######################-----------------------------------------------] 287/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[######################-----------------------------------------------] 294/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#######################----------------------------------------------] 302/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#######################----------------------------------------------] 310/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[########################---------------------------------------------] 319/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[########################---------------------------------------------] 323/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[########################---------------------------------------------] 327/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#########################--------------------------------------------] 331/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#########################--------------------------------------------] 335/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##########################-------------------------------------------] 341/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##########################-------------------------------------------] 346/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##########################-------------------------------------------] 353/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###########################------------------------------------------] 357/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###########################------------------------------------------] 364/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[############################-----------------------------------------] 371/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[############################-----------------------------------------] 379/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#############################----------------------------------------] 387/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##############################---------------------------------------] 394/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##############################---------------------------------------] 402/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###############################--------------------------------------] 411/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###############################--------------------------------------] 418/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[################################-------------------------------------] 425/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[################################-------------------------------------] 432/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#################################------------------------------------] 436/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#################################------------------------------------] 443/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#################################------------------------------------] 446/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##################################-----------------------------------] 455/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##################################-----------------------------------] 457/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##################################-----------------------------------] 460/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###################################----------------------------------] 464/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###################################----------------------------------] 470/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###################################----------------------------------] 471/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[####################################---------------------------------] 480/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[####################################---------------------------------] 486/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#####################################--------------------------------] 490/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#####################################--------------------------------] 494/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#####################################--------------------------------] 499/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[######################################-------------------------------] 507/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[######################################-------------------------------] 513/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#######################################------------------------------] 519/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#######################################------------------------------] 525/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[########################################-----------------------------] 532/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[########################################-----------------------------] 539/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#########################################----------------------------] 545/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#########################################----------------------------] 552/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##########################################---------------------------] 556/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##########################################---------------------------] 559/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##########################################---------------------------] 562/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###########################################--------------------------] 568/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###########################################--------------------------] 573/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###########################################--------------------------] 575/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###########################################--------------------------] 580/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[############################################-------------------------] 587/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[############################################-------------------------] 593/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#############################################------------------------] 599/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#############################################------------------------] 606/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##############################################-----------------------] 613/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##############################################-----------------------] 617/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##############################################-----------------------] 619/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###############################################----------------------] 627/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###############################################----------------------] 633/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[################################################---------------------] 638/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[################################################---------------------] 644/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#################################################--------------------] 648/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#################################################--------------------] 653/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##################################################-------------------] 661/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##################################################-------------------] 666/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##################################################-------------------] 673/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###################################################------------------] 680/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[####################################################-----------------] 688/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[####################################################-----------------] 693/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#####################################################----------------] 702/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#####################################################----------------] 711/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[######################################################---------------] 718/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#######################################################--------------] 728/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#######################################################--------------] 737/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[########################################################-------------] 745/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[########################################################-------------] 753/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#########################################################------------] 756/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#########################################################------------] 762/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##########################################################-----------] 769/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##########################################################-----------] 777/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###########################################################----------] 781/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###########################################################----------] 782/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###########################################################----------] 789/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[############################################################---------] 795/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[############################################################---------] 805/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#############################################################--------] 812/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##############################################################-------] 821/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##############################################################-------] 824/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##############################################################-------] 830/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###############################################################------] 836/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###############################################################------] 841/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###############################################################------] 846/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[################################################################-----] 856/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#################################################################----] 861/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#################################################################----] 866/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#################################################################----] 869/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#################################################################----] 872/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##################################################################---] 875/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##################################################################---] 881/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###################################################################--] 889/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###################################################################--] 896/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[####################################################################-] 901/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[####################################################################-] 906/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[####################################################################-] 913/921
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#####################################################################] 920/921
+ DEBUG [28289050] 	[2K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[34minfo[39m fsevents@1.2.9: The platform "linux" is incompatible with this module.
+ DEBUG [28289050] 	[2K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[34minfo[39m "fsevents@1.2.9" is an optional dependency and failed compatibility check. Excluding it from installation.
+ DEBUG [28289050] 	[2K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[34minfo[39m fsevents@2.1.1: The platform "linux" is incompatible with this module.
+ DEBUG [28289050] 	[2K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[34minfo[39m "fsevents@2.1.1" is an optional dependency and failed compatibility check. Excluding it from installation.
+ DEBUG [28289050] 	[2K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[2m[3/4][22m Linking dependencies...
+ DEBUG [28289050] 	[2K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[33mwarning[39m " > sass-loader@7.3.1" has unmet peer dependency "webpack@^3.0.0 || ^4.0.0".
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#####################################################################] 921/921
+ DEBUG [28289050] 	[2K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[2K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[-----------------------------------------------------------------------] 0/958
+ DEBUG [28289050] 	[2K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[2K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[---------------------------------------------------------------------] 0/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#------------------------------------------------------------------] 256/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###----------------------------------------------------------------] 512/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[####---------------------------------------------------------------] 640/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#####--------------------------------------------------------------] 896/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[######------------------------------------------------------------] 1152/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[########----------------------------------------------------------] 1408/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#########---------------------------------------------------------] 1664/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##########--------------------------------------------------------] 1920/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[############------------------------------------------------------] 2304/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###############---------------------------------------------------] 2688/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[################--------------------------------------------------] 2944/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##################------------------------------------------------] 3328/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[####################----------------------------------------------] 3712/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[######################--------------------------------------------] 4096/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[########################------------------------------------------] 4480/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##########################----------------------------------------] 4864/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[############################--------------------------------------] 5120/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##############################------------------------------------] 5504/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###############################-----------------------------------] 5760/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#################################---------------------------------] 6144/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###################################-------------------------------] 6400/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#####################################-----------------------------] 6784/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#######################################---------------------------] 7168/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#######################################---------------------------] 7296/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#########################################-------------------------] 7552/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##########################################------------------------] 7808/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[############################################----------------------] 8192/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##############################################--------------------] 8449/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[################################################------------------] 8832/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##################################################----------------] 9216/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[####################################################--------------] 9600/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[######################################################------------] 9984/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#######################################################----------] 10368/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[#########################################################--------] 10752/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###########################################################------] 11008/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[############################################################-----] 11362/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[##############################################################---] 11648/12210
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[################################################################-] 12002/12210
+ DEBUG [28289050] 	[2K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[2K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[----------------------------------------------------------------------] 0/1747
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[####################------------------------------------------------] 502/1747
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###############################################--------------------] 1214/1747
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[###################################################################] 1747/1747
+ DEBUG [28289050] 	[2K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[2m[4/4][22m Building fresh packages...
+ DEBUG [28289050] 	[1B
+ DEBUG [28289050] 	[2K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[32msuccess[39m Saved lockfile.
+ DEBUG [28289050] 	[2K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	[2K
+ DEBUG [28289050] 	[1G
+ DEBUG [28289050] 	Done in 25.29s.
+  INFO [28289050] Finished in 26.424 seconds with exit status 0 (successful).
+  INFO [d2e0fd03] Running /usr/bin/env yarn prod on aws-test-ansible
+ DEBUG [d2e0fd03] Command: cd /var/www/html/project-name/releases/20191101072427 && /usr/bin/env yarn prod
+ DEBUG [d2e0fd03] 	[2K
+ DEBUG [d2e0fd03] 	[1G
+ DEBUG [d2e0fd03] 	[1myarn run v1.19.1[22m
+ DEBUG [d2e0fd03] 	[2K
+ DEBUG [d2e0fd03] 	[1G
+ DEBUG [d2e0fd03] 	[2m$ npm run production[22m
+ DEBUG [d2e0fd03] 	[37;40mnpm[0m
+ DEBUG [d2e0fd03] 	 [0m
+ DEBUG [d2e0fd03] 	[30;43mWARN[0m
+ DEBUG [d2e0fd03] 	 [0m
+ DEBUG [d2e0fd03] 	[35mlifecycle[0m
+ DEBUG [d2e0fd03] 	 The node binary used for scripts is /tmp/yarn--1572593149847-0.7245679791055659/node but npm is using /usr/bin/node itself. Use the `--scripts-prepend-node-path` option to include the path for the node binary npm was executed with.
+[0m
+ DEBUG [d2e0fd03] 	
+> @ production /var/www/html/project-name/releases/20191101072427
+> cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js
+
+ DEBUG [d2e0fd03] 	[32m 	Additional dependencies must be installed. This will only take a moment.
+ DEBUG [d2e0fd03] 	[0m 
+ DEBUG [d2e0fd03] 	[32m 	Running: npm install vue-template-compiler --save-dev --production=false
+ DEBUG [d2e0fd03] 	[0m 
+ DEBUG [d2e0fd03] 	npm notice [SECURITY] set-value has the following vulnerability: 1 high. Go here for more details: https://www.npmjs.com/advisories?search=set-value&version=2.0.1 - Run `npm i npm@latest -g` to upgrade your npm version, and then `npm audit` to get more info.
+npm WARN rm not removing /var/www/html/project-name/releases/20191101072427/node_modules/.bin/semver as it wasn't installed by /var/www/html/project-name/releases/20191101072427/node_modules/semver
+npm WARN rm not removing /var/www/html/project-name/releases/20191101072427/node_modules/.bin/regjsparser as it wasn't installed by /var/www/html/project-name/releases/20191101072427/node_modules/regjsparser
+npm WARN rm not removing /var/www/html/project-name/releases/20191101072427/node_modules/.bin/json5 as it wasn't installed by /var/www/html/project-name/releases/20191101072427/node_modules/json5
+npm WARN rm not removing /var/www/html/project-name/releases/20191101072427/node_modules/.bin/jsesc as it wasn't installed by /var/www/html/project-name/releases/20191101072427/node_modules/jsesc
+npm WARN rm not removing /var/www/html/project-name/releases/20191101072427/node_modules/.bin/cssesc as it wasn't installed by /var/www/html/project-name/releases/20191101072427/node_modules/cssesc
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.1 (node_modules/sass/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.1: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+[32m 	Okay, done. The following packages have been installed and saved to your package.json dependencies list:
+[0m 
+[32m 	- vue-template-compiler
+[0m 
+ DEBUG [d2e0fd03] 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ DEBUG [d2e0fd03] 	[1;1H
+ DEBUG [d2e0fd03] 	[0J
+ DEBUG [d2e0fd03] 	[42m[30m DONE [39m[49m [32mCompiled successfully in 6185ms[39m                                [90m7:26:57 AM[39m
+ DEBUG [d2e0fd03] 	
+ DEBUG [d2e0fd03] 	       [1mAsset[39m[22m      [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m[1mChunk Names[39m[22m
+[1m[32m/css/app.css[39m[22m   0 bytes       [1m0[39m[22m  [1m[32m[emitted][39m[22m  /js/app
+  [1m[32m/js/app.js[39m[22m  84.9 KiB       [1m0[39m[22m  [1m[32m[emitted][39m[22m  /js/app
+ DEBUG [d2e0fd03] 	[2K
+ DEBUG [d2e0fd03] 	[1G
+ DEBUG [d2e0fd03] 	Done in 67.77s.
+  INFO [d2e0fd03] Finished in 68.309 seconds with exit status 0 (successful).
+ DEBUG [a4b9dd3b] Running if test ! -d /var/www/html/project-name/releases; then echo "Directory does not exist '/var/www/html/project-name/releases'" 1>&2; false; fi on aws-test-ansible
+ DEBUG [a4b9dd3b] Command: if test ! -d /var/www/html/project-name/releases; then echo "Directory does not exist '/var/www/html/project-name/releases'" 1>&2; false; fi
+ DEBUG [a4b9dd3b] Finished in 0.777 seconds with exit status 0 (successful).
+  INFO [f0286d96] Running /usr/bin/env echo "Branch master (at 4049d271a59140138aa240e4dda9b9494b36894d) deployed as release 20191101072427 by thor" >> /var/www/html/project-name/revisions.log on aws-test-ansible
+ DEBUG [f0286d96] Command: cd /var/www/html/project-name/releases && /usr/bin/env echo "Branch master (at 4049d271a59140138aa240e4dda9b9494b36894d) deployed as release 20191101072427 by thor" >> /var/www/html/project-name/revisions.log
+  INFO [f0286d96] Finished in 0.337 seconds with exit status 0 (successful).
