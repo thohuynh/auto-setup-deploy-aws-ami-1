@@ -1,0 +1,58 @@
+---
+
+- hosts: aws
+  remote_user: ec2-user
+
+  tasks:
+    #update and install php
+    - name: update aws
+      shell: >
+        yum update -y
+      become: true
+
+    - name: Install remirepo aws
+      shell: >
+        yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm --skip-broken
+        && yum-config-manager --enable remi-php72
+        && yum update -y
+        && yum install openssl zip unzip git php72 php72-mbstring.x86_64 php72-zip.x86_64 php72-cli php72-common php72-devel php72-json php72-mysqlnd php72-pdo php72-pdo_mysql php72-process php72-xml php72-gd php72-gmp php72-bcmath -y
+      become: true
+
+    #install composer
+    - name: Install composer
+      shell: >
+        curl -sS https://getcomposer.org/installer | php
+        && mv composer.phar /usr/bin/composer
+        && chmod +x /usr/bin/composer
+        && /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024
+        && /sbin/mkswap /var/swap.1
+        && /sbin/swapon /var/swap.1
+      args:
+        creates: "/var/swap.1"
+      become: true
+
+    #install node
+    - name: Install Node.js
+      shell: >
+        yum install gcc-c++ make -y
+        && curl -sL https://rpm.nodesource.com/setup_13.x | bash -
+        && yum -y install nodejs
+        && curl -sL https://dl.yarnpkg.com/rpm/yarn.repo | tee /etc/yum.repos.d/yarn.repo
+        && yum -y install yarn
+      args:
+        creates: "{{ ansible_env.HOME }}/.yarn"
+      become: true
+
+    #install httpd
+    - name: Install httpd
+      shell: >
+        yum install httpd24 httpd24-tools -y
+        && service httpd restart
+        && usermod -a -G apache ec2-user
+        && chown -R ec2-user:apache /var/www
+        && chmod 2775 /var/www
+      become: true
+#    - name: set role /var/www
+#      shell: >
+#        find /var/www -type d -exec sudo chmod 2775 {} \;
+#        find /var/www -type f -exec sudo chmod 0664 {} \;
