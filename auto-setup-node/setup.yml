@@ -1,0 +1,44 @@
+---
+
+- hosts: node-server
+  remote_user: ec2-user
+
+  tasks:
+    #update and install php
+    - name: update aws
+      shell: >
+        yum update -y
+      become: true
+
+    - name: Install remirepo aws
+      shell: >
+        yum install openssl zip unzip git -y
+      become: true
+
+    #install node
+    - name: Install Node.js
+      shell: >
+        yum install gcc-c++ make -y
+        && curl -sL https://rpm.nodesource.com/setup_13.x | bash -
+        && yum -y install nodejs
+        && curl -sL https://dl.yarnpkg.com/rpm/yarn.repo | tee /etc/yum.repos.d/yarn.repo
+        && yum -y install yarn
+        && npm install pm2@latest -g
+      args:
+        creates: "{{ ansible_env.HOME }}/.yarn"
+      become: true
+
+    #install httpd
+    - name: Install httpd
+      shell: >
+        yum install httpd24 httpd24-tools -y
+        && service httpd restart
+        && usermod -a -G apache ec2-user
+        && chown -R ec2-user:apache /var/www
+        && chmod 2775 /var/www
+      become: true
+
+  roles:
+    - {
+      role: git
+    }

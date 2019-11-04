@@ -3,6 +3,11 @@
 - hosts: aws
   remote_user: ec2-user
 
+  roles:
+    - {
+      role: git
+    }
+
   tasks:
     #update and install php
     - name: update aws

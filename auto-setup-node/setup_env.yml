@@ -1,0 +1,9 @@
+---
+
+- hosts: node-server
+  remote_user: ec2-user
+  roles:
+    - {
+      role: env,
+      path_project: /var/www/html/node-project/source
+    }
