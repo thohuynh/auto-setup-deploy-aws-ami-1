@@ -1,5 +1,2 @@
-/auto-setup-laravel/ansible.cfg
-/auto-setup-node/ansible.cfg
-/auto-setup-laravel/logs/
-/auto-setup-node/logs/
-/auto-deploy-laravel/logs/
+ansible.cfg
+logs/
